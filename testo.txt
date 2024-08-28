@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gianpaolo Severino - Sito Personale</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: slideDown 1s ease-in-out;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #003366;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #00509e;
+        }
+        section {
+            padding: 20px;
+            margin: 10px 0;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        section:nth-child(even) {
+            animation-delay: 0.2s;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #003366;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            padding: 10px;
+            background-color: #003366;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #00509e;
+        }
+
+        /* Animations */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gianpaolo Severino</h1>
+    <p>Laureato in Scienze del Lavoro con Master in Materie Giuridiche Economiche</p>
+</header>
+
+<nav>
+    <a href="#chi-sono">Chi Sono</a>
+    <a href="#formazione">Formazione</a>
+    <a href="#esperienze">Esperienze</a>
+    <a href="#competenze">Competenze</a>
+    <a href="#contatti">Contatti</a>
+</nav>
+
+<section id="chi-sono">
+    <h2>Chi Sono</h2>
+    <p>Mi chiamo Gianpaolo Severino, sono laureato in Scienze del Lavoro e ho conseguito un Master in Materie Giuridiche Economiche. La mia formazione mi ha fornito solide basi nel campo del diritto e dell'economia, competenze che intendo applicare nel mondo professionale.</p>
+</section>
+
+<section id="formazione">
+    <h2>Formazione</h2>
+    <ul>
+        <li><strong>Laurea in Scienze del Lavoro</strong> - Università [Nome Università]</li>
+        <li><strong>Master in Materie Giuridiche Economiche</strong> - Università [Nome Università]</li>
+    </ul>
+</section>
+
+<section id="esperienze">
+    <h2>Esperienze Professionali</h2>
+    <p>Sezione dedicata alle esperienze professionali. Puoi aggiungere dettagli in futuro.</p>
+</section>
+
+<section id="competenze">
+    <h2>Competenze</h2>
+    <ul>
+        <li>Diritto del lavoro</li>
+        <li>Economia aziendale</li>
+        <li>Gestione delle risorse umane</li>
+        <li>Analisi economica e finanziaria</li>
+    </ul>
+</section>
+
+<section id="contatti">
+    <h2>Contatti</h2>
+    <form>
+        <input type="text" name="nome" placeholder="Il tuo nome" required>
+        <input type="email" name="email" placeholder="La tua email" required>
+        <textarea name="messaggio" placeholder="Il tuo messaggio" rows="5" required></textarea>
+        <button type="submit">Invia</button>
+    </form>
+    <p>Email: gianpaolo.severino@email.com</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Gianpaolo Severino. Tutti i diritti riservati.</p>
+</footer>
+
+</body>
+</html>
